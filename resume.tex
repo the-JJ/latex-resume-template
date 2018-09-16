@@ -1,0 +1,89 @@
+\documentclass{jjcv}
+
+% UTF8 & Croatian characters
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[croatian]{babel}
+
+% font
+\usepackage{lmodern}
+\usepackage[babel=true]{microtype}
+
+% misc. used packages
+\usepackage{graphicx}
+\usepackage{scrextend}
+\usepackage{calc}
+
+% for colouring box (summary box)
+\usepackage{xcolor}
+\usepackage{tabu}
+
+% remove lists' indentation
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*}
+
+% remove page number
+\pagestyle{empty}
+
+\begin{document}
+
+\headerbox{Rick Sanchez}{Intergalactic genius}{Earth, Dimension C-137}{+1 202 555 0112}{rick@adultswim.com}{A genius scientist, creating complex scientific inventions, including brain-enhancing helmets, dream-invading devices, and the world's first amusement park inside the body of a living human.}%
+\vspace{5pt}
+
+% You can set the width manually. 0.60 | 0.35 works nicely; feel free to experiment
+\begin{minipage}[t]{0.60\textwidth}
+\section{Work experience}
+\datedsubsection{Position}{Company}{2013 -- Present}
+
+\begin{indentbox}
+\item todo
+\end{indentbox}
+
+\section{Education}
+\datedsubsection{To do}{University, City, Country}{2010 -- 2013 (expected)}
+
+\begin{indentbox}
+\relevantcourses{Relevant Courses}
+{Course 1}
+{Course 2}
+{Course 3}
+%{A hidden course}
+
+\textbf{Essay:} My Essay
+
+\end{indentbox}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.35\textwidth}
+
+\section{Skills}
+\subsection{Advanced}
+\begin{indentbox}[0.5em]
+Interdimensional Travel \qquad \LaTeX \\
+Picklemorphosis \qquad Cable Piracy
+\end{indentbox}
+\subsection{Intermediate}
+\begin{indentbox}[0.5em]
+Music theory
+\end{indentbox}
+
+\section{Interests}
+\begin{indentbox}
+\item Interest 1
+\item Interest 2
+\end{indentbox}
+
+\section{Extracurricular participation}
+\datedsubsection{Position}{Where}{2012/13}
+\begin{indentbox}
+\item Task 1
+\end{indentbox}
+
+\section{Languages}
+\begin{indentbox}
+\item English (native)
+\item Alien (fluent)
+\end{indentbox}
+\end{minipage}
+
+\end{document} 

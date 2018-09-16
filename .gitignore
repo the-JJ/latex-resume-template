@@ -1,0 +1,10 @@
+*.aux
+*.log
+*.synctex.gz
+
+# Output
+/output
+
+# But keep final pdf
+!/output/*.pdf
+
